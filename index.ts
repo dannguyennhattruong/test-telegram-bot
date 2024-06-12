@@ -74,6 +74,11 @@ app.listen(3232, () => {
     console.log(`App is up`)
 })
 
+app.get('/get-json', (req: Request, res: Response) => {
+    const data = require("./telegram_user.json")
+    res.send(data)
+})
+
 const savechat = (dto: {
     username: string;
     chatId: number;
