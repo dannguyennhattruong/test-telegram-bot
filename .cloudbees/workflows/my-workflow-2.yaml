@@ -2,8 +2,6 @@ apiVersion: automation.cloudbees.io/v1alpha1
 kind: workflow
 name: My workflow
 
-image: node:latest
-
 on:
   push:
     branches:
@@ -13,7 +11,7 @@ jobs:
   build:
     steps:
       - name: Say hello
-        uses: docker://node:latest
+        uses: docker://node:18.17.1
         shell: sh
         run: |
           npm i
