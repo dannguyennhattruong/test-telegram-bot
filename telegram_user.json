@@ -10,7 +10,8 @@
         "create_by": "battle_city",
         "create_at": 1717748624651,
         "system": "battle_city",
-        "__v": 0
+        "__v": 0,
+        "isSent": true
     },
     {
         "_id": "6667171eff9d93e31a2ebdcf",
@@ -23,7 +24,8 @@
         "create_by": "battle_city",
         "create_at": 1718032158406,
         "system": "battle_city",
-        "__v": 0
+        "__v": 0,
+        "isSent": true
     },
     {
         "_id": "6667271eff9d93e31a2ebeee",
@@ -36,7 +38,8 @@
         "create_by": "battle_city",
         "create_at": 1718036254457,
         "system": "battle_city",
-        "__v": 0
+        "__v": 0,
+        "isSent": true
     },
     {
         "_id": "66678756ff9d93e31a2ec7ea",
@@ -49,7 +52,8 @@
         "create_by": "battle_city",
         "create_at": 1718060886689,
         "system": "battle_city",
-        "__v": 0
+        "__v": 0,
+        "isSent": true
     },
     {
         "_id": "666823dcff9d93e31a2ee416",
@@ -62,7 +66,8 @@
         "create_by": "battle_city",
         "create_at": 1718100956475,
         "system": "battle_city",
-        "__v": 0
+        "__v": 0,
+        "isSent": true
     },
     {
         "_id": "6662629eff9d93e31a2e4238",
@@ -76,6 +81,42 @@
         "create_at": 1717723806242,
         "system": "battle_city",
         "__v": 0,
+        "isSent": true
+    },
+    {
+        "chatId": 333763976,
+        "username": "pewpells",
+        "date": 1718297111,
+        "isSent": false
+    },
+    {
+        "chatId": 6774129523,
+        "username": "TheHeroTON",
+        "date": 1718298213,
+        "isSent": false
+    },
+    {
+        "chatId": 6537973954,
+        "username": "voloha9",
+        "date": 1718298787,
+        "isSent": false
+    },
+    {
+        "chatId": 5904011128,
+        "username": "MHASec",
+        "date": 1718300447,
+        "isSent": false
+    },
+    {
+        "chatId": 7117666373,
+        "username": "CryptoLova777",
+        "date": 1718302145,
+        "isSent": false
+    },
+    {
+        "chatId": 5809889009,
+        "username": "enes3t1",
+        "date": 1718303089,
         "isSent": false
     }
 ]

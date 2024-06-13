@@ -5,7 +5,7 @@ import { Update } from "@telegraf/types";
 import { Request, Response } from "express";
 import { Telegraf, Markup, Context } from "telegraf";
 var cron = require('node-cron');
-let bot : Telegraf<Context<Update>>;
+let bot: Telegraf<Context<Update>>;
 
 const sendMsg1 = () => {
     return {
@@ -103,6 +103,25 @@ const savechat = (dto: {
     }
 }
 
+app.get('/pushmessage', async () => {
+    const startMsg1 = `
+            ⏰ Your Daily Tasks are Ready 
+            🌟 Claim your rewards and boost your progress!
+            👇 Tap the button below for a Daily Tasks, amazing rewards awaits for you! 
+                    `
+    const findAll = fileSys.read();
+    for await (const iterator of findAll) {
+        const s1 = sendMsg1();
+
+        await bot.telegram.sendMessage(Number(iterator.chatId), startMsg1, {
+            reply_markup: s1.reply_markup,
+            parse_mode: 'HTML'
+        })
+
+        iterator.isSent = true;
+    }
+})
+
 app.get('/bot/start', async (req: Request, res: Response) => {
     cron.schedule('0 8 * * *', async () => {
         console.log('Set cron 8 AM everyday')
@@ -123,8 +142,8 @@ app.get('/bot/start', async (req: Request, res: Response) => {
             iterator.isSent = true;
         }
     });
-     res.send('Set done !')
-     return await bot.launch();
+    res.send('Set done !')
+    return await bot.launch();
 })
 
 app.get('/bot/:token', async (req: Request, res: Response) => {
